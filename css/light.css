@@ -1,4 +1,5 @@
 :root {
-  --color: #434343;
-  --background-color: #dedede;
+  --color: #411960;
+  --bg-colour: #ffbbff;
+  --background: url(../img/bg_light.png), var(--bg-colour);
 }

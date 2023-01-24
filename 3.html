@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>view this in an iframe silly :3</title>
+    <meta charset="utf-8" />
+    <script>
+      // If `prefers-color-scheme` is not supported, fall back to light mode.
+      // In this case, light.css will be downloaded with `highest` priority.
+      if (
+        window.matchMedia("(prefers-color-scheme: dark)").media === "not all"
+      ) {
+        document.documentElement.style.display = "none";
+        document.head.insertAdjacentHTML(
+          "beforeend",
+          '<link rel="stylesheet" href="css/light.css" onload="document.documentElement.style.display = \'\'">'
+        );
+      }
+    </script>
+    <link rel="stylesheet" href="css/main.css" />
+    <style>
+      /* mini specific css */
+      body {
+        background: transparent !important;
+        width: max-content;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="css/dark.css"
+      media="(prefers-color-scheme: dark)"
+    />
+    <link
+      rel="stylesheet"
+      href="css/light.css"
+      media="(prefers-color-scheme: light)"
+    />
+  </head>
+  <body>
+    <h1>about me</h1>
+    <ul>
+      <li>my name is lily</li>
+      <li>i am a trans girl</li>
+      <li>my favourite programming language is rust</li>
+      <li class="age">...</li>
+      <li>i stan maia arson crimew (she is so based) <a href="https://maia.crimew.gay/">(click here if you do not know who the fuck that is)</a></li>
+      <li>i have a gf (her name is luna (she's so nice, i love her so much))</li>
+      <li>literally every funny thing i say or do i stole it from someone else</li>
+    </ul>
+    <script>
+      // i am a lazy cunt this is why i did this
+      document.querySelector(".age").innerText = `i am ${Math.floor((new Date() - new Date("2007-04-14")) / (1000*60*60*24*365.25) * 100)/100} years old`;
+    </script>
+  </body>
+</html>

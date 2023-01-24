@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>view this in an iframe silly :3</title>
+    <meta charset="utf-8" />
+    <script>
+      // If `prefers-color-scheme` is not supported, fall back to light mode.
+      // In this case, light.css will be downloaded with `highest` priority.
+      if (
+        window.matchMedia("(prefers-color-scheme: dark)").media === "not all"
+      ) {
+        document.documentElement.style.display = "none";
+        document.head.insertAdjacentHTML(
+          "beforeend",
+          '<link rel="stylesheet" href="css/light.css" onload="document.documentElement.style.display = \'\'">'
+        );
+      }
+    </script>
+    <link rel="stylesheet" href="css/main.css" />
+    <style>
+      /* mini specific css */
+      body {
+        background: transparent !important;
+        width: max-content;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="css/dark.css"
+      media="(prefers-color-scheme: dark)"
+    />
+    <link
+      rel="stylesheet"
+      href="css/light.css"
+      media="(prefers-color-scheme: light)"
+    />
+  </head>
+  <body>
+    <h1>now why is this site so shitty you might ask</h1>
+    <p>well it's because it needs to be static because github pages</p>
+    <p>
+      as soon as i get a server (which will just be my old computer with a new
+      hard drive and without a gpu), i'll install nginx and put cool stuff on it
+    </p>
+    <p>most of the site will still be open source</p>
+  </body>
+</html>

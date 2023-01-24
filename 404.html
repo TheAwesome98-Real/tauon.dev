@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>404: No such file or directory</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <script>
+      // If `prefers-color-scheme` is not supported, fall back to light mode.
+      // In this case, light.css will be downloaded with `highest` priority.
+      if (
+        window.matchMedia("(prefers-color-scheme: dark)").media === "not all"
+      ) {
+        document.documentElement.style.display = "none";
+        document.head.insertAdjacentHTML(
+          "beforeend",
+          '<link rel="stylesheet" href="css/light.css" onload="document.documentElement.style.display = \'\'">'
+        );
+      }
+    </script>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="css/dark.css"
+      media="(prefers-color-scheme: dark)"
+    />
+    <link
+      rel="stylesheet"
+      href="css/light.css"
+      media="(prefers-color-scheme: light)"
+    />
+    <link rel="icon" href="img/icon.png" class="icon" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="content">
+        <h1>oopsie woopsie, an error occured</h1>
+        <h2>http status code: 404</h2>
+        <h2>actual error:</h2>
+        <pre class="error">
+        </pre>
+        <script>
+          document.querySelector(".error").innerText = `${document.location.href}: No such file or directory`;
+        </script>
+      </div>
+    </div>
+    <!-- easter egg~! -->
+    <canvas style="display: none"></canvas>
+    <script src="js/konami.min.js"></script>
+    <script>
+      var canvas = document.querySelector("canvas");
+      var context = canvas.getContext("2d");
+
+      canvas.width = 512;
+      canvas.height = 512;
+
+      var bg = new Image();
+      bg.src = "img/background.png";
+
+      var fg = new Image();
+      fg.src = "img/foreground.png";
+
+      var i = 0;
+
+      var render = () => {
+        context.drawImage(bg, 0, 0);
+        context.drawImage(fg, i - 512, 0);
+        context.drawImage(fg, i, 0);
+
+        i += 2;
+        if (i > 512) i = 0;
+
+        requestAnimationFrame(render);
+      };
+
+      document.body.addEventListener(
+        "keyup",
+        Konami.code(() => {
+          render();
+          setInterval(() => {
+            document
+              .querySelector(".icon")
+              .setAttribute("href", canvas.toDataURL("image/x-icon"));
+          }, 1000 / 60);
+        })
+      );
+    </script>
+  </body>
+</html>
