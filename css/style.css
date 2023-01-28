@@ -81,3 +81,7 @@ pre {
   padding: 4px;
   border-radius: 12px;
 }
+
+pre * {
+  font-family: inherit;
+}
