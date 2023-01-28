@@ -14,13 +14,13 @@
     <div class="content">
       <div class="content">
         <h1>oopsie woopsie, an error occured</h1>
-        <h2>http status code: 404</h2>
+        <h2>http status code: 403</h2>
         <h2>actual error:</h2>
         <pre class="error">
           <noscript>we can't load the error if you don't have javascript enabled</noscript>
         </pre>
         <script>
-          document.querySelector(".error").innerText = `${document.location.href}: No such file or directory`;
+          document.querySelector(".error").innerText = `${document.location.href}: Permission denied`;
         </script>
     </div>
     <!-- easter egg~! -->

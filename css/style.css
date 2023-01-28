@@ -1,0 +1,83 @@
+:not(:hover) {
+  scrollbar-color: transparent transparent;
+}
+
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  transition: scrollbar-color 0.1s;
+  scrollbar-color: #bb00ff transparent;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url(../images/background-tile-tau.png),
+    radial-gradient(#400060, #200030);
+  color: #ffbbff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  animation: scroll-bg 15s linear infinite;
+}
+
+h1 {
+  text-align: center;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffbbff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@keyframes scroll-bg {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -105% -105%;
+  }
+}
+
+.content {
+  transition: backdrop-filter 0.2s, box-shadow 0.2s;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 8px 2px #100015;
+  background: rgba(255, 240, 255, 0.2);
+  border-radius: 12px;
+  width: 75%;
+  max-height: 50%;
+  margin: 8px;
+  overflow-y: hidden;
+}
+
+.content:hover {
+  backdrop-filter: blur(16px);
+  box-shadow: 0 0 16px 2px #100015;
+}
+
+.box {
+  border-radius: 12px;
+  box-shadow: 0 0 8px 2px #100015;
+  margin: 12px;
+  padding: 8px;
+  opacity: 0.8;
+  transition: margin 0.1s, opacity 0.1s;
+}
+
+.box:hover {
+  margin: 16px;
+  opacity: 1;
+}
+
+pre {
+  font-family: "JetBrains Mono", "Consolas", monospace;
+  padding: 4px;
+  border-radius: 12px;
+}
