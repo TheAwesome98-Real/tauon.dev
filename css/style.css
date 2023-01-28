@@ -19,6 +19,7 @@ body {
   display: flex;
   justify-content: center;
   animation: scroll-bg 15s linear infinite;
+  overflow: hidden;
 }
 
 h1 {
@@ -54,7 +55,7 @@ a:hover {
   width: 75%;
   max-height: 50%;
   margin: 8px;
-  overflow-y: hidden;
+  overflow: scroll;
 }
 
 .content:hover {
