@@ -84,5 +84,5 @@ pre {
 }
 
 pre * {
-  font-family: inherit;
+  font-family: inherit !important;
 }
