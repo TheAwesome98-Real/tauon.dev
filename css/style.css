@@ -63,6 +63,12 @@ a:hover {
   box-shadow: 0 0 16px 2px #100015;
 }
 
+@media only screen and (orientation: portrait) {
+  .content {
+    width: auto;
+  }
+}
+
 .box {
   border-radius: 12px;
   box-shadow: 0 0 8px 2px #100015;
