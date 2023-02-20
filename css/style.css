@@ -1,39 +1,16 @@
-:not(:hover) {
-  scrollbar-color: transparent transparent;
-}
-
 * {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  transition: scrollbar-color 0.1s;
-  scrollbar-color: #bb00ff transparent;
+  animation-fill-mode: both !important;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background: url(../images/background-tile-tau.png),
-    radial-gradient(#400060, #200030);
-  color: #ffbbff;
+  background: url(../images/background-tile-tau.png), #1d1025;
+  color: #bb64ee;
+  text-shadow: 0 0 4px #bb64ee;
+  font-family: "JetBrains Mono", "Cascadia Code", monospace;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
   animation: scroll-bg 15s linear infinite;
-  overflow: hidden;
-}
-
-h1 {
-  text-align: center;
-}
-
-a {
-  font-weight: bold;
-  text-decoration: none;
-  color: #ffbbff;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 @keyframes scroll-bg {
@@ -42,53 +19,106 @@ a:hover {
   }
 
   to {
-    background-position: -105% -105%;
+    background-position: -100% -100%;
   }
 }
 
-.content {
-  transition: backdrop-filter 0.2s, box-shadow 0.2s;
-  backdrop-filter: blur(8px);
-  box-shadow: 0 0 8px 2px #100015;
-  background: rgba(255, 240, 255, 0.2);
-  border-radius: 12px;
-  width: 75%;
-  height: 100vh;
-  margin: 8px;
-  overflow: scroll;
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #bb64ee;
 }
 
-.content:hover {
-  backdrop-filter: blur(16px);
-  box-shadow: 0 0 16px 2px #100015;
+a:hover {
+  text-decoration: underline;
 }
 
-@media only screen and (orientation: portrait) {
-  .content {
-    width: auto;
-  }
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.flex .box {
+  flex-grow: 1;
+}
+
+.caption {
+  display: block;
+}
+
+.caption::after {
+  content: " :3c";
+  opacity: 0.5;
 }
 
 .box {
-  border-radius: 12px;
-  box-shadow: 0 0 8px 2px #100015;
-  margin: 12px;
+  box-shadow: 0 0 8px #bb64ee;
+  background: #0d071180;
+  backdrop-filter: blur(8px);
+  border-radius: 1em;
   padding: 8px;
-  opacity: 0.8;
-  transition: margin 0.1s, opacity 0.1s;
+  margin: 16px;
+  transition: backdrop-filter 0.25s, box-shadow 0.25s;
 }
 
 .box:hover {
-  margin: 16px;
   opacity: 1;
+  box-shadow: 0 0 16px #bb64ee;
+  backdrop-filter: blur(16px);
+  background: #1f1129a1;
 }
 
-pre {
-  font-family: "JetBrains Mono", "Consolas", monospace;
-  padding: 4px;
-  border-radius: 12px;
+.centred {
+  text-align: center;
 }
 
-pre * {
-  font-family: inherit !important;
+.pop-in {
+  animation: pop-in 0.5s;
+}
+
+@keyframes pop-in {
+  0% {
+    transform: scale(0%);
+  }
+
+  100% {
+    transform: scale(100%);
+  }
+}
+
+.slide-in-up {
+  animation: slide-in-up 0.5s;
+}
+
+@keyframes slide-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(2em);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+ul li {
+  animation: slide-in-left 0.5s;
+}
+
+.slide-in-left {
+  animation: slide-in-left 0.5s;
+}
+
+@keyframes slide-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(2em);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   width="512"
+   height="512"
+   viewBox="0 0 512.00001 512.00001"
+   id="svg8"
+   sodipodi:docname="darflen.svg"
+   inkscape:version="1.2.2 (1:1.2.2+202212051552+b0a8486541)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs12" />
+  <sodipodi:namedview
+     id="namedview10"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     showgrid="false"
+     inkscape:zoom="1.4060733"
+     inkscape:cx="192.37973"
+     inkscape:cy="105.96887"
+     inkscape:window-width="1920"
+     inkscape:window-height="995"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg8" />
+  <path
+     d="m 206.988,207.3455 97.668,-97.675 22.001,22.001 22.002,22.001 -97.657,97.657 -97.657,97.656 -22.013,-21.982 -22.012,-21.983 97.668,-97.675 m -102.991,-5.009 c 26.76,-26.767 48.964,-48.668 49.343,-48.668 0.379,0 10.278,9.603 21.998,21.34 l 21.309,21.34 -48.99,48.99 -48.989,48.99 -21.663,-21.663 -21.662,-21.662 48.654,-48.667 m 156.669,59.331 c 53.529,-53.532 97.634,-97.332 98.011,-97.332 0.377,0 10.275,9.603 21.995,21.341 l 21.309,21.34 -97.656,97.656 -97.656,97.657 -21.665,-21.665 -21.664,-21.664 97.326,-97.333 m 102.989,5.011 48.998,-49.011 22.002,22.002 22.002,22.002 -48.99,48.99 -48.989,48.99 -22.011,-21.98 -22.011,-21.981 48.999,-49.012"
+     id="path2"
+     style="mix-blend-mode:normal;fill:#bb64ee;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;fill-opacity:1" />
+</svg>

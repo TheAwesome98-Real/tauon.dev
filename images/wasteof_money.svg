@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="336 312 512.00002 512"
+   version="1.1"
+   id="svg531"
+   sodipodi:docname="wasteof_money.svg"
+   width="512"
+   height="512"
+   inkscape:version="1.2.2 (1:1.2.2+202212051552+b0a8486541)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs535" />
+  <sodipodi:namedview
+     id="namedview533"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     showgrid="false"
+     inkscape:zoom="0.90437331"
+     inkscape:cx="-37.042225"
+     inkscape:cy="163.64923"
+     inkscape:window-width="1920"
+     inkscape:window-height="995"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg531" />
+  <mask
+     id="w">
+    <path
+       fill="#ffffff"
+       d="m 336,312 h 188.943 v 94.471 H 336 Z"
+       fill-rule="evenodd"
+       id="path524" />
+    <path
+       fill="#000000"
+       d="m 347.808,335.618 12.907,47.271 h 13.897 l 8.152,-29.737 h 0.58 l 8.152,29.737 h 13.925 l 12.878,-47.271 h -13.274 l -7.232,31.57 h -0.396 l -7.784,-31.57 h -13.062 l -7.656,31.754 h -0.425 l -7.359,-31.754 z"
+       fill-rule="evenodd"
+       id="path526" />
+  </mask>
+  <path
+     fill="#ffffff"
+     d="m 336,312 h 188.943 v 94.471 H 336 Z"
+     fill-rule="evenodd"
+     mask="url(#w)"
+     id="path529"
+     transform="matrix(2.3725796,0,0,2.3725796,-429.3279,-284.31482)"
+     style="fill:#bb64ee;fill-opacity:1" />
+</svg>

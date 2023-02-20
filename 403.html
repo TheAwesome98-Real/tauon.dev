@@ -7,29 +7,31 @@
       name="viewport"
       content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
-    <meta name="theme-color" content="#008080" />
+    <meta name="theme-color" content="#ee64ae" />
     <meta name="description" content="haiiiii ^w^" />
     <meta property="og:title" content="lily's site" />
     <meta property="og:description" content="haiiiii ^w^" />
     <meta property="og:url" content="https://TheAwesome98-Real.github.io/" />
-    <meta property="og:url" content="images/icon.png" />
+    <meta property="og:image" content="images/icon.png" />
     <meta property="og:site_name" content="lily's site" />
     <link rel="icon" href="images/icon.png" class="icon" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-    <div class="content">
-      <div class="content">
-        <h1>oopsie woopsie, an error occured</h1>
-        <h2>http status code: 403</h2>
-        <h2>actual error:</h2>
-        <pre class="error">
-          <noscript>we can't load the error if you don't have javascript enabled</noscript>
-        </pre>
-        <script>
-          document.querySelector(".error").innerText = `${document.location.href}: Permission denied`;
-        </script>
+    <div class="box centred pop-in">
+      <h1>oopsie woopsie</h1>
+      <p>an error occured</p>
+    </div>
+    <div class="box pop-in">
+      <p>http status code: 403</p>
+      <p>actual error:</p>
+      <pre class="error">
+        <noscript>we can't load the error if you don't have javascript enabled</noscript>
+      </pre>
+      <script>
+        document.querySelector(".error").innerText = `${document.location.href}: Permission denied`;
+      </script>
     </div>
     <!-- easter egg~! -->
     <canvas style="display: none"></canvas>
