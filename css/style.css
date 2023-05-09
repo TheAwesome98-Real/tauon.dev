@@ -124,3 +124,12 @@ ul li {
     transform: translateX(0);
   }
 }
+
+.account-link {
+  transition: width 0.25s, height 0.25s;
+}
+
+.account-link:hover {
+  width: 48px;
+  height: 48px;
+}
