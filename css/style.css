@@ -28,10 +28,25 @@ body {
   padding: 4px;
 }
 
+@keyframes fade-in {
+  0% {
+    filter: blur(16px);
+    transform: scale(50%);
+    opacity: 0.5;
+  }
+
+  100% {
+    filter: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+
 .box,
 .header {
   height: max-content;
   margin-bottom: 24px;
+  animation: fade-in 0.25s;
 }
 
 .title {
