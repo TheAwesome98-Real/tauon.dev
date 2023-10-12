@@ -73,3 +73,15 @@ a:hover {
   }
 }
 
+blockquote.warning {
+  border-left: 2px solid #eebb64;
+  color: #eebb64;
+  padding-left: 8px;
+  margin: 12px 8px;
+}
+
+blockquote.warning::before {
+  content: '⚠ warning: ';
+  color: white;
+  font-weight: bold;
+}
