@@ -49,6 +49,22 @@ body {
   animation: fade-in 0.25s;
 }
 
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.box * {
+  animation: slide-in 0.25s ease-out 0.25s both;
+}
+
 .title {
   border-bottom: 1px solid white;
   font-size: 1.5em;
