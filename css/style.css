@@ -1,92 +1,93 @@
 :root {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  color-scheme: dark light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
 }
 
 body {
   margin: 0;
   padding: 0;
-  background: url(/images/background.png), #1d1025;
-  color: white;
-}
-
-.container {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
+  background-color: #1c0031;
 }
 
 .content {
-  min-height: 100%;
+  max-width: 800px;
+  margin: 0px auto;
 }
 
-.box {
-  border: 1px solid white;
-  background: #0d071140;
-  backdrop-filter: blur(4px);
-  padding: 4px;
+.main {
+  border: 1px solid #fff8;
+  background-image: url(/images/bg.png);
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-color: #2a1241;
+  display: table;
+  table-layout: fixed;
 }
 
-@keyframes fade-in {
-  0% {
-    filter: blur(16px);
-    transform: scale(50%);
-    opacity: 0.5;
-  }
-
-  100% {
-    filter: none;
-    transform: none;
-    opacity: 1;
-  }
+.left {
+  padding: 8px;
+  text-align: center;
 }
 
-.box,
-.header {
-  height: max-content;
-  margin-bottom: 24px;
-  animation: fade-in 0.25s;
+.left ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  text-align: left;
+  width: max-content;
 }
 
-@keyframes slide-in {
-  0% {
-    transform: translateX(-100px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: none;
-    opacity: 1;
-  }
-}
-
-.box * {
-  animation: slide-in 0.25s ease-out 0.25s both;
-}
-
-.title {
-  border-bottom: 1px solid white;
-  font-size: 1.5em;
-  padding: 4px;
-  color: #bb64ee;
-  margin-bottom: 4px;
-}
-
-a {
-  font-weight: bold;
+.left ul li a {
+  color: #fff8;
   text-decoration: none;
-  color: #bb64ee;
+  transition: color 0.25s;
+  font-weight: normal;
 }
 
-a:hover {
+.left ul li a:hover {
+  color: white;
+}
+
+.left ul li a.active {
+  color: white;
+  text-shadow: 0 0 2px #fff8;
   text-decoration: underline;
 }
 
-@media screen and (min-width: 1280px) {
-  .content {
-    max-width: 75%;
-  }
+.right {
+  padding: 8px;
+}
+
+.right_content {
+  background: #0004;
+  padding: 4px;
+  border: 1px solid #fff8;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+  border-bottom: 1px solid #fff8;
+  color: #b668ff;
+}
+
+h1.main_header {
+  text-align: left;
+  border: none;
+  padding: 2px;
+}
+
+.top_container {
+  display: flex;
+  justify-content: space-between;
 }
 
 blockquote.warning {
@@ -97,7 +98,145 @@ blockquote.warning {
 }
 
 blockquote.warning::before {
-  content: '⚠ warning: ';
+  content: "⚠ warning: ";
   color: white;
   font-weight: bold;
+}
+
+abbr[title] {
+  cursor: help;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.listbox {
+  padding: 4px;
+  background: #0008;
+  border: 1px solid #fff8;
+  border-radius: 12px;
+}
+
+.listbox h3 {
+  margin: 4px;
+}
+
+.listbox .list-item {
+  padding: 4px;
+  transition: padding ease-in-out 0.1s;
+}
+
+.listbox .list-item:hover {
+  padding-left: 8px;
+}
+
+.listbox .list-item a {
+  color: white;
+}
+
+.listbox .list-item a:hover {
+  text-decoration: none;
+}
+
+.listbox .list-item a img {
+  vertical-align: middle;
+  border-radius: 8px;
+  width: 32px;
+  height: 32px;
+}
+
+.listbox .list-item:not(:last-of-type) {
+  border-bottom: 1px solid #fff8;
+}
+
+@media screen and (min-width: 800px) {
+  .content {
+    padding: 4px 0px;
+  }
+
+  .main {
+    width: 100%;
+  }
+
+  .col {
+    display: table-cell;
+    vertical-align: top;
+  }
+
+  .left ul {
+    padding: revert;
+    margin: revert;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color-scheme: light;
+  }
+
+  body {
+    background-color: #7228ba; /* todo */
+  }
+
+  .main {
+    border: 1px solid #0008;
+    background-image: url(/images/bg_light.png); /* todo */
+    background-color: #9747e3; /* todo */
+  }
+
+  .right_content {
+    background: #fff4;
+    border: 1px solid #0008;
+  }
+
+  h1 {
+    border-bottom: 1px solid #0008;
+    color: #551a8b;
+  }
+
+  .left ul li a {
+    color: #0008;
+  }
+
+  .left ul li a:hover {
+    color: black;
+  }
+
+  .left ul li a.active {
+    color: black;
+    text-shadow: 0 0 2px #0008;
+  }
+
+  .listbox {
+    background: #fff8;
+    border: 1px solid #0008;
+  }
+
+  .listbox .list-item a {
+    color: black;
+  }
+
+  .listbox .list-item:not(:last-of-type) {
+    border-bottom: 1px solid #0008;
+  }
+}
+
+.buttons.warning {
+  display: none;
+}
+
+@media (prefers-reduced-motion) {
+  .buttons.warning + center {
+    display: none;
+  }
+
+  .buttons.warning {
+    display: block;
+  }
 }
