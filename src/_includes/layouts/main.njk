@@ -1,0 +1,29 @@
+{% extends 'layouts/common.njk' %}
+{% block page %}
+<div class="col left">
+  <h1 class="main_header"><a href="/">lily :3</a></h1>
+  <!-- TODO: add back class="active" before release -->
+  <ul>
+    <li>
+      <a href="https://lucerne.tauon.dev">sitemap (to lucerne)</a>
+    </li>
+    <li>
+      <a href="https://wiki.tauon.dev">wiki (to lucerne)</a>
+    </li>
+    <li>
+      <a href="/dni_list">dni list</a>
+    </li>
+    <li>
+      <a href="/gd">gd</a>
+    </li>
+    <li>
+      <a href="/privacy">privacy</a>
+    </li>
+  </ul>
+</div>
+<div class="col right">
+  <div class="right_content">
+    {% block main %}{% endblock %}
+  </div>
+</div>
+{% endblock %}

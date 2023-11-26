@@ -1,0 +1,30 @@
+---
+title: privacy policy
+description: here are your rights!! :3 i'm literally saul goodman but a girl. saul goodwoman.  saula. idk.
+date: git Last Modified
+---
+{% extends 'layouts/main.njk' %}
+{% block main %}
+<h1>privacy</h1>
+<p>
+  by using certain services that i have created, some of your data may
+  be stored. here they are:
+</p>
+<h2>my homepage (tauon.dev) and wiki (wiki.tauon.dev)</h2>
+<p>
+  when you visit any page on these site, your IP address, user agent,
+  and the file you accessed, are logged. this is the default behaviour
+  of nginx, and it will stay enabled for me to diagnose if i am being
+  attacked.
+</p>
+<h2>Motion JPEG experiments (mjpeg.tauon.dev)</h2>
+<p>
+  the information for the tauon.dev applies, due to the servers for
+  the Motion JPEG experiments being reverse-proxied through nginx.
+</p>
+<p>
+  additionally, a hashed version of your IP is stored in an in-memory
+  database, in order to determine which functions you have accessed on
+  each experiment.
+</p>
+{% endblock %}

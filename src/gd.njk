@@ -1,0 +1,62 @@
+---
+title: lily's gd stats
+description: i'm a gd pro!! :3
+date: git Last Modified
+---
+{% extends 'layouts/main.njk' %}
+{% block head %}
+<style>
+  .progress_bar {
+    height: 16px;
+    width: 50%;
+    background: #1c0031;
+    border: 1px solid #b668ff;
+  }
+
+  .progress_bar div {
+    background: #b668ff;
+    color: #1c0031;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  @media (prefers-color-scheme: light) {
+    .progress_bar {
+      background: #b668ff;
+      border: 1px solid #1c0031;
+    }
+
+    .progress_bar div {
+      background: #1c0031;
+      color: #b668ff;
+    }
+  }
+</style>
+{% endblock %}
+{% block main %}
+<h1>my gd stats :3</h1>
+<small
+  >these aren't live yet but i'm planning on doing that soon once
+  i move this site to my server</small
+>
+<h3>details:</h3>
+<ul>
+  <li>username: tauon07</li>
+  <li>stars: 39</li>
+  <li>diamonds: 561</li>
+  <li>coins: 8</li>
+  <li>creatorpoints: 0</li>
+  <li>demons: 0</li>
+</ul>
+<h3>demons:</h3>
+<h4>the nightmare:</h4>
+<div class="progress_bar">
+  <div style="width: 65%">65%</div>
+</div>
+<h4>nine circles:</h4>
+<div class="progress_bar">
+  <div style="width: 19%">19%</div>
+</div>
+{% endblock %}

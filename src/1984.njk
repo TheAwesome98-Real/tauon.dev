@@ -1,0 +1,22 @@
+---
+title: 1984 Request Blocked due to Presence of Web Environment Integrity API
+description: don't use chrome :3
+date: git Last Modified
+permalink: /1984.html
+---
+{% extends 'layouts/error.njk' %}
+{% block error %}
+<h2>Your browser contains Google DRM</h2>
+<p>
+  "Web Environment Integrity" is a Google euphemism for a DRM that
+  is designed to prevent ad-blocking. In support of an open web,
+  this website does not function with this DRM. Please install a
+  browser such as
+  <a href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a>
+  that respects your freedom and supports ad blockers.
+</p>
+<script>
+  if (navigator.getEnvironmentIntegrity === undefined)
+    document.currentScript.outerHTML = `<p>it appears that you have visited this page without the presence of the Web Environment Integrity API. you may safely close this page.`;
+</script>
+{% endblock %}

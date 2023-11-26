@@ -1,0 +1,84 @@
+[
+  {
+    "title": "Applications",
+    "is_factory": true,
+    "profiles": [
+      {
+        "href": "https://youtube.com/@tauon_",
+        "src": "youtube",
+        "alt": "iOS 6-style YouTube icon",
+        "title": "YouTube"
+      },
+      {
+        "href": "https://possum.city/@tauon",
+        "src": "fedi",
+        "alt": "iOS 6-style Fediverse icon",
+        "src_small": "possumcity",
+        "alt_small": "Possum City logo",
+        "title": "Fediverse (Possum City)"
+      },
+      {
+        "href": "https://fedi.meows.gay/@tauon",
+        "src": "fedi",
+        "alt": "iOS 6-style Fediverse icon",
+        "src_small": "gaycatfedi",
+        "alt_small": "gay cat fedi :3 logo",
+        "title": "Fediverse (gay cat fedi :3)"
+      },
+      {
+        "href": "https://tauon07.tumblr.com/",
+        "src": "tumblr",
+        "alt": "Tumblr icon",
+        "title": "Tumblr"
+      },
+      {
+        "href": "https://darflen.com/users/d661124c2daf37642842319b",
+        "src": "missing",
+        "alt": "The icon that appears in iOS 6 if an application is missing an icon",
+        "title": "Darflen"
+      },
+      {
+        "href": "https://github.com/TheAwesome98-Real",
+        "src": "github",
+        "alt": "GitHub icon",
+        "title": "GitHub"
+      },
+      {
+        "href": "https://postlit.dev/users/tauon",
+        "src": "postlit",
+        "alt": "An iOS 6 style postlit icon, which is a vector graphic of a green fire emoji",
+        "title": "postLit"
+      },
+      {
+        "href": "https://cohost.org/tauon",
+        "src": "cohost",
+        "alt": "cohost! icon",
+        "title": "cohost!"
+      },
+      {
+        "href": "https://status.cafe/users/tauon",
+        "src": "status.cafe",
+        "alt": "status.cafe icon",
+        "title": "status.cafe"
+      }
+    ]
+  },
+  {
+    "title": "silly old internet things!! :3",
+    "is_factory": false,
+    "profiles": [
+      {
+        "href": "javascript:alert('i don\\'t really know what to do about this\n\nit goes by my old online name and has a bunch of shit content, maybe i should just make a new one?')",
+        "src": "bitview",
+        "alt": "The official BitView mobile icon, which looks like an iOS 6-style icon",
+        "title": "BitView"
+      },
+      {
+        "href": "https://blips.club/tauon",
+        "src": "blips",
+        "alt": "Blips icon",
+        "title": "Blips"
+      }
+    ]
+  }
+]

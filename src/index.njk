@@ -1,0 +1,173 @@
+---
+description: beep beep! welcome to lily's cool home page :3
+date: git Last Modified
+---
+{% extends 'layouts/common.njk' %}
+{% block page %}
+<div class="col left">
+  <img
+    src="/images/hi.png"
+    alt="a drawing of my fursona, tauon. she is green, with white tummy fur, has a big fluffy tail, big ears, and a black visor with a blue lit up face. a speech bubble is above her that says 'hi~!'"
+    width="250"
+  />
+  <ul>
+    <li>
+      <a href="https://lucerne.tauon.dev">sitemap (to lucerne)</a>
+    </li>
+    <li>
+      <a href="https://wiki.tauon.dev">wiki (to lucerne)</a>
+    </li>
+    <li>
+      <a href="/dni_list">dni list</a>
+    </li>
+    <li>
+      <a href="/gd">gd</a>
+    </li>
+    <li>
+      <a href="/privacy">privacy</a>
+    </li>
+  </ul>
+</div>
+<div class="col right">
+  <div class="right_content">
+    <h1>welcome to my homepage!! :3</h1>
+    <noscript>
+      <blockquote class="warning">
+        <p>
+hey - the majority of this site works without javascript (i
+made sure of that :3), but a couple of features i can't, or
+am too lazy, to make functional without javascript. those
+are:
+        </p>
+        <ul>
+<li>instead of my age, my date of birth will be shown</li>
+<li>
+  <code>abbr</code> (that is, the text with dotty underlines
+  that contain additional information on hover or click)
+  will be nonfunctional on mobile
+</li>
+<li>
+  the status.cafe status will not show up (i may, in future,
+  write some kind of iframe proxy but that is <i>so</i> low
+  on my to do list)
+</li>
+<li>
+  webrings that require javascript will potentially be
+  outdated
+</li>
+        </ul>
+        <p>
+please consider allowing javascript for https://tauon.dev -
+unless i'm overtaken by an evil capitalist spirit (and
+you'll definitely know if that happens), i'll never do
+anything malicious with javascript (promise!! :3)
+        </p>
+      </blockquote>
+    </noscript>
+    <p>
+      omg hi!! :3 my name is
+      <abbr
+        title="my full name is liliana celeste newton, but no one calls me that"
+        >lily</abbr
+      >, and i'm a furry (my fursona is called
+      <abbr
+        title="her friends call her tauri. her full name is tauon the protogen (like sonic the hedgehog) but no one calls her that"
+        >tauon</abbr
+      >, here's her
+      <a href="javascript:alert('psych! i don\'t have one yet x3')"
+        >ref sheet</a
+      >), a trans girl (my pronouns are she/it), and i love girls!!!
+      (and boys (and enbies (and other creatures)))
+    </p>
+    <p>
+      my favourite programming language is rust (that's because my
+      code never segfaults (unless i'm doing something especially
+      silly)) i'm also a total maia arson crimew stan!!! you can go to
+      the 88x31s down below to find a link to its site!! :3
+    </p>
+    <p>
+      <span
+        >i was born on 2007-04-14
+        <script>
+let age =
+  Math.floor(
+    ((new Date() - new Date("2007-04-14")) /
+      (1000 * 60 * 60 * 24 * 365.25)) *
+      1000
+  ) / 1000;
+document.currentScript.parentElement.innerHTML = `<abbr title="${age} to be exact!! :3">i am ${Math.floor(
+  age
+)} years old</abbr>`;
+        </script></span
+      >!! i was born when everyone's sites looked like this
+      unironically (it's not really ironic - i really appreciate the
+      older style of sites)
+    </p>
+    <h2>find me on other websites :3</h2>
+    <div class="listbox">
+      {% for section in profiles %}
+      <h3>{{ section.title }}</h3>
+      {% for profile in section.profiles %}
+      <div class="list-item">
+        <a target="_blank" href="{{ profile.href }}"
+><img
+  alt="{{ profile.alt }}"
+  src="/images/icons/{{ profile.src }}.png"
+/>{% if profile.alt_small %}<img
+  class="smallicon"
+  alt="{{ profile.alt_small }}"
+  src="/images/icons/{{ profile.src_small }}.png"
+/>{% endif %}
+{{ profile.title }}</a
+        >
+      </div>
+      {% endfor %}
+      {% endfor %}
+      </div>
+    </div>
+    <p>
+      (i might acquire more of the old internet things btw!! i think
+      they're really cool :3)
+    </p>
+    <h2>embed my 88x31 on your page! :3</h2>
+    <p>please <b>do</b> hotlink the button btw!!</p>
+    <center>
+      <textarea style="width: 300px; height: 145px; resize: none">
+<a href="https://tauon.dev/" target="_blank">
+  <img
+    src="/images/88x31/lily.png"
+    alt="lily"
+    width="88"
+    height="31"
+    style="image-rendering: pixelated"
+    title="do hotlink my button!"
+  />
+</a>
+      </textarea>
+    </center>
+    <h2>look at my latest status.cafe!</h2>
+    <div id="statuscafe">
+      <div id="statuscafe-username">...</div>
+      <div id="statuscafe-content">...</div>
+    </div>
+    <style>
+      #statuscafe {
+        padding: 0.5em;
+        background-color: azure;
+        border: 1px solid midnightblue;
+        color: midnightblue;
+      }
+      #statuscafe-username {
+        margin-bottom: 0.5em;
+      }
+      #statuscafe-content {
+        margin: 0 1em 0.5em 1em;
+      }
+    </style>
+    <script
+      src="https://status.cafe/current-status.js?name=tauon"
+      defer
+    ></script>
+  </div>
+</div>
+{% endblock %}
