@@ -4,6 +4,6 @@ description: description
 date: git Last Modified
 ---
 {% extends 'layouts/main.njk' %}
-{% block main %}
+{% block page %}
 :3
 {% endblock %}
