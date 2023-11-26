@@ -6,7 +6,7 @@
   "scripts": {
       "build": "rm -rf www && ELEVENTY_ENV=prod eleventy",
       "serve": "rm -rf www && ELEVENTY_ENV=dev eleventy --serve",
-      "update": "git pull && npm i && npm run build"
+      "update": "git pull && yarn && yarn build"
   },
   "license": "BSD-3-Clause",
   "private": false,
