@@ -2,19 +2,18 @@
 {% block page %}
 <div class="col left">
   <h1 class="main_header"><a href="/">lily :3</a></h1>
-  <!-- TODO: i forgot to add back class="active" so remember to do that -->
   <ul>
     <li>
       <a href="https://wiki.tauon.dev">wiki</a>
     </li>
     <li>
-      <a href="/dni_list">dni list</a>
+      <a href="/dni_list"{% if active == "dni_list" %} class="active"{% endif %}>dni list</a>
     </li>
     <li>
-      <a href="/gd">gd</a>
+      <a href="/gd"{% if active == "gd" %} class="active"{% endif %}>gd</a>
     </li>
     <li>
-      <a href="/privacy">privacy</a>
+      <a href="/privacy"{% if active == "privacy" %} class="active"{% endif %}>privacy</a>
     </li>
   </ul>
 </div>
