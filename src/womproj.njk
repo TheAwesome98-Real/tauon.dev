@@ -1,0 +1,247 @@
+---
+title: lily's wasteof.money projects
+description: these will be so epic!! :3
+active: womproj
+date: git Last Modified
+---
+{% extends 'layouts/main.njk' %}
+{% block head %}
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #fff8;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #fff4;
+}
+</style>
+{% endblock %}
+{% block page %}
+<h1>my wasteof.money projects :3</h1>
+<p>listed in order of when it will be worked on</p>
+<p>feature lists are by no means complete</p>
+<h3>wasteof.rss</h3>
+<h4>features</h4>
+<table>
+  <tr>
+    <th>feature</th>
+    <th><abbr title="yes if will be present on initial release">required?</abbr></th>
+    <th>finished?</th>
+    <th>blocked on</th>
+  </tr>
+  <tr>
+    <td>user profiles</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>
+      one of:
+      <ul>
+        <li>rss</li>
+        <li>atom</li>
+        <li>json feeds</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>user following</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>
+      one of:
+      <ul>
+        <li>rss</li>
+        <li>atom</li>
+        <li>json feeds</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>trending</td>
+    <td>no</td>
+    <td>no</td>
+    <td>
+      one of:
+      <ul>
+        <li>rss</li>
+        <li>atom</li>
+        <li>json feeds</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>rss</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>N/A</td>
+  </tr>
+  <tr>
+    <td>atom</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>N/A</td>
+  </tr>
+  <tr>
+    <td>json feeds</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>N/A</td>
+  </tr>
+</table>
+<h3>wasteof.rs</h3>
+<h4>features</h4>
+<table>
+  <tr>
+    <th>feature</th>
+    <th><abbr title="yes if will be present on initial release">required?</abbr></th>
+    <th>finished?</th>
+    <th>blocked on</th>
+  </tr>
+  <tr>
+    <td>types</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>N/A</td>
+  </tr>
+  <tr>
+    <td>authentication</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>N/A</td>
+  </tr>
+  <tr>
+    <td>get posts</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>types</td>
+  </tr>
+  <tr>
+    <td>create posts</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>
+      <ul>
+        <li>types</li>
+        <li>authentication</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+<h3>wasteof.live</h3>
+<h4>features</h4>
+<table>
+  <tr>
+    <th>feature</th>
+    <th><abbr title="yes if will be present on initial release">required?</abbr></th>
+    <th>finished?</th>
+    <th>blocked on</th>
+  </tr>
+  <tr>
+    <td>subscription</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>N/A</td>
+  </tr>
+  <tr>
+    <td>post subscribe</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>subscription</td>
+  </tr>
+  <tr>
+    <td>download feed</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>post subscription</td>
+  </tr>
+  <tr>
+    <td>socket.io subscription</td>
+    <td>no</td>
+    <td>no</td>
+    <td>subscription</td>
+  </tr>
+  <tr>
+    <td>/chat subscription</td>
+    <td>no</td>
+    <td>no</td>
+    <td>socket.io subscription</td>
+  </tr>
+  <tr>
+    <td>notification subscription</td>
+    <td>no</td>
+    <td>no</td>
+    <td>socket.io subscription</td>
+  </tr>
+  <tr>
+    <td>asks subscription</td>
+    <td>no</td>
+    <td>no</td>
+    <td>
+      <ul>
+        <li>project:wasteof.money asks</li>
+        <li>subscription</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+<h3>wasteof.money authenticator</h3>
+<h4>features</h4>
+<table>
+  <tr>
+    <th>feature</th>
+    <th><abbr title="yes if will be present on initial release">required?</abbr></th>
+    <th>finished?</th>
+    <th>blocked on</th>
+  </tr>
+  <tr>
+    <td>authentication</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>N/A</td>
+  </tr>
+</table>
+<h3>wasteof.money asks</h3>
+<h4>features</h4>
+<table>
+  <tr>
+    <th>feature</th>
+    <th><abbr title="yes if will be present on initial release">required?</abbr></th>
+    <th>finished?</th>
+    <th>blocked on</th>
+  </tr>
+  <tr>
+    <td>asks</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>N/A</td>
+  </tr>
+  <tr>
+    <td>anon asks (requires login)</td>
+    <td>maybe</td>
+    <td>no</td>
+    <td>asks</td>
+  </tr>
+  <tr>
+    <td>report asks</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>asks</td>
+  </tr>
+</table>
+<h3>img bot</h3>
+<h4>features</h4>
+<table>
+  <tr>
+    <th>feature</th>
+    <th><abbr title="yes if will be present on initial release">required?</abbr></th>
+    <th>finished?</th>
+    <th>blocked on</th>
+  </tr>
+</table>
+{% endblock %}
