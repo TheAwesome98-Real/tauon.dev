@@ -19,4 +19,5 @@ additionally, to run `yarn update` automatically, you can do this:
 [config]
 secret=... ; the secret that was generated before
 user=... ; the user that has access to yarn
+```
 6. done
