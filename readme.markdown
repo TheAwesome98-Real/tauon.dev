@@ -8,3 +8,11 @@ the commands are:
 - `yarn build`: build for production
 - `yarn serve`: build and serve for dev
 - `yarn update`: update, install dependencies, and build (for server)
+
+additionally, to run `yarn update` automatically, you can do this:
+1. generate a secret by running `openssl rand -hex 64`
+2. add a github webhook on your repository for `https://example.com/update.php`
+3. add the secret
+4. create a file called `.env`
+5. write `SECRET=(secret)` but **DO NOT END WITH A NEWLINE**
+6. done
