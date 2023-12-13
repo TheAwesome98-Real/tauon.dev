@@ -41,7 +41,6 @@ body {
   list-style: none;
   padding: 0;
   margin: 0 auto;
-  text-align: left;
   width: max-content;
 }
 
@@ -83,11 +82,6 @@ h1.main_header {
   text-align: left;
   border: none;
   padding: 2px;
-}
-
-.top_container {
-  display: flex;
-  justify-content: space-between;
 }
 
 blockquote.warning {
@@ -164,22 +158,13 @@ a:hover {
 }
 
 @media screen and (min-width: 800px) {
-  .content {
-    padding: 4px 0px;
-  }
-
-  .main {
-    width: 100%;
-  }
-
-  .col {
-    display: table-cell;
-    vertical-align: top;
+  .top_container {
+    display: flex;
+    justify-content: space-between;
   }
 
   .left ul {
-    padding: revert;
-    margin: revert;
+    text-align: left;
   }
 }
 
