@@ -14,5 +14,9 @@ additionally, to run `yarn update` automatically, you can do this:
 2. add a github webhook on your repository for `https://example.com/update.php`
 3. add the secret
 4. create a file called `.env`
-5. write `SECRET=(secret)` but **DO NOT END WITH A NEWLINE**
+5. write this:
+```ini
+[config]
+secret=... ; the secret that was generated before
+user=... ; the user that has access to yarn
 6. done
