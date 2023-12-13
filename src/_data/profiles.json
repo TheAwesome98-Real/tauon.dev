@@ -33,8 +33,8 @@
       },
       {
         "href": "https://darflen.com/users/d661124c2daf37642842319b",
-        "src": "missing",
-        "alt": "The icon that appears in iOS 6 if an application is missing an icon",
+        "src": "darflen",
+        "alt": "An iOS 6 style Darflen icon, which is a vector graphic of white rectangles on a red background",
         "title": "Darflen"
       },
       {
@@ -46,7 +46,7 @@
       {
         "href": "https://postlit.dev/users/tauon",
         "src": "postlit",
-        "alt": "An iOS 6 style postlit icon, which is a vector graphic of a green fire emoji",
+        "alt": "An iOS 6 style postLit icon, which is a vector graphic of a green fire emoji",
         "title": "postLit"
       },
       {
