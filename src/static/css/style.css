@@ -157,6 +157,18 @@ a:hover {
   filter: drop-shadow(0px 0px 3px #000);
 }
 
+.browser_warning {
+  position: fixed;
+  bottom: 0;
+  display: none;
+  align-items: center;
+  background: #2a1241;
+  border: 1px solid #fff8;
+  margin: 16px;
+  padding: 4px;
+  width: calc(100% - 40px);
+}
+
 @media screen and (min-width: 800px) {
   .top_container {
     display: flex;
@@ -174,13 +186,13 @@ a:hover {
   }
 
   body {
-    background-color: #7228ba; /* todo */
+    background-color: #7228ba;
   }
 
   .main {
     border: 1px solid #0008;
-    background-image: url(/images/bg_light.png); /* todo */
-    background-color: #9747e3; /* todo */
+    background-image: url(/images/bg_light.png);
+    background-color: #9747e3;
   }
 
   .right_content {
@@ -217,6 +229,11 @@ a:hover {
 
   .listbox .list-item:not(:last-of-type) {
     border-bottom: 1px solid #0008;
+  }
+
+  .browser_warning {
+    background: #979797;
+    border: 1px solid #0008;
   }
 }
 
