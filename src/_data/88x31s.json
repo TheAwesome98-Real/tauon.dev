@@ -72,6 +72,16 @@
         "href": "https://idkimjustadog.neocities.org/",
         "src": "https://idkimjustadog.neocities.org/ellietime.png",
         "alt": "ellie time"
+      },
+      {
+        "href": "https://houl.floof.company//",
+        "src": "https://houl.floof.company//assets/img/button.png",
+        "alt": "houl"
+      },
+      {
+        "href": "https://freeplay.floof.company/",
+        "src": "https://freeplay.floof.company/assets/buttons/free.png",
+        "alt": "FREEEE (freeplay)"
       }
     ]
   },
@@ -191,6 +201,16 @@
       {
         "src": "/images/88x31/tyg.gif",
         "alt": "trans your gender"
+      },
+      {
+        "href": "https://freeplay.floof.company/assets/buttons/ublock.png",
+        "src": "/images/88x31/ublock.png",
+        "alt": "ublock origin now"
+      },
+      {
+        "href": "https://freeplay.floof.company/assets/buttons/firefox.png",
+        "src": "/images/88x31/firefox.png",
+        "alt": "take back the web, install firefox"
       }
     ]
   }
