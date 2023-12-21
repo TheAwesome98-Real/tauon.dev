@@ -84,7 +84,10 @@ document.currentScript.parentElement.innerHTML = `<abbr title="${age} to be exac
   <h3>{{ section.title }}</h3>
   {% for profile in section.profiles %}
   <div class="list-item">
-    <a target="_blank" href="{{ profile.href }}"
+    <a
+      target="_blank"
+      href="{{ profile.href }}" {% if profile.is_rel_me %}
+      rel="me" {% endif %}
 ><img
   alt="{{ profile.alt }}"
   src="/images/icons/{{ profile.src }}.png"

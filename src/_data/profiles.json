@@ -15,7 +15,8 @@
         "alt": "iOS 6-style Fediverse icon",
         "src_small": "possumcity",
         "alt_small": "Possum City logo",
-        "title": "Fediverse (Possum City)"
+        "title": "Fediverse (Possum City)",
+        "is_rel_me": true
       },
       {
         "href": "https://fedi.meows.gay/@tauon",
@@ -23,7 +24,8 @@
         "alt": "iOS 6-style Fediverse icon",
         "src_small": "gaycatfedi",
         "alt_small": "gay cat fedi :3 logo",
-        "title": "Fediverse (gay cat fedi :3)"
+        "title": "Fediverse (gay cat fedi :3)",
+        "is_rel_me": true
       },
       {
         "href": "https://tauon07.tumblr.com/",
