@@ -173,6 +173,6 @@
     <div class="browser_warning"><img src="/images/nochrome.png" height="48" /><span>it seems that your browser is based on <strong>chromium technologies!</strong> you should install a free browser such as <a href="https://www.mozilla.org/en-US/firefox/new/">firefox</a> to stop google taking over the web! (they have <a href="https://en.m.wikipedia.org/wiki/Web_Environment_Integrity">tried already</a>...)</span></div>
     <script src="/js/nochrome.js"></script>
     <script src="/js/abbr.js"></script>
-    <script src="/js/adblockblockblock.js"></script>
+    {% if active != "1984" %}<script src="/js/adblockblockblock.js"></script>{% endif %}
   </body>
 </html>
