@@ -26,6 +26,7 @@ date: git Last Modified
   additionally, a hashed version of your IP is stored in an in-memory database,
   in order to determine which functions you have accessed on each experiment.
 </p>
+{% if site.is_lazy %}
 <h2>buttonproxy (buttonproxy.tauon.dev)</h2>
 <p>
   as a user of this service (i.e., you just browse to / on my server and load
@@ -37,4 +38,5 @@ date: git Last Modified
   <code>robots.txt</code> file. then, mail me at (my name)@(the domain of this
   site) to remove the files that may have been stored.
 </p>
+{% endif %}
 {% endblock %}

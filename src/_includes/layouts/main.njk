@@ -90,7 +90,11 @@
           {% for entry in section.entries %}
           {% if entry.href %}<a href="{{ entry.href }}"
             >{% endif %}<img
+            {% if site.is_lazy %}
               src="{% if entry.src.startsWith('http') %}{{ 'https://buttonproxy.tauon.dev/fetch' if env.environment.isProd else 'http://localhost:6969/' }}?url={{ entry.src }}&redirect_if_blocked=true{% else %}{{ entry.src }}{% endif %}"
+            {% else %}
+              src="{{ entry.src }}"
+            {% endif %}
               alt="{{ entry.alt }}"
               width="88"
               height="31"
