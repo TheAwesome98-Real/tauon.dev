@@ -89,12 +89,9 @@
           <p>{{ section.name }}:</p>
           {% for entry in section.entries %}
           {% if entry.href %}<a href="{{ entry.href }}"
-            >{% endif %}<img
-            {% if site.is_lazy %}
-              src="{% if entry.src.startsWith('http') %}{{ 'https://buttonproxy.tauon.dev/fetch' if env.environment.isProd else 'http://localhost:6969/' }}?url={{ entry.src }}&redirect_if_blocked=true{% else %}{{ entry.src }}{% endif %}"
-            {% else %}
-              src="{{ entry.src }}"
-            {% endif %}
+            >{% endif %}<img{% if site.is_lazy %}
+              src="{% if entry.src.startsWith('http') %}{{ 'https://buttonproxy.tauon.dev/fetch' if env.environment.isProd else 'http://localhost:6969/' }}?url={{ entry.src }}&redirect_if_blocked=true{% else %}{{ entry.src }}{% endif %}"{% else %}
+              src="{{ entry.src }}"{% endif %}
               alt="{{ entry.alt }}"
               width="88"
               height="31"
@@ -173,11 +170,17 @@
           </noscript>
           <p>please invite me to more webrings please please please</p>
         </center>
+        <style class="edit_css" contenteditable="true">
+          .edit_css {
+            font-family: monospace;
+          }
+        </style>
       </div>
     </div>
     <div class="browser_warning"><img src="/images/nochrome.png" height="48" /><span>it seems that your browser is based on <strong>chromium technologies!</strong> you should install a free browser such as <a href="https://www.mozilla.org/en-US/firefox/new/">firefox</a> to stop google taking over the web! (they have <a href="https://en.m.wikipedia.org/wiki/Web_Environment_Integrity">tried already</a>...)</span></div>
     <script src="/js/nochrome.js"></script>
     <script src="/js/abbr.js"></script>
     {% if active != "1984" %}<script src="/js/adblockblockblock.js"></script>{% endif %}
+    <script src="/js/easteregg.js"></script>
   </body>
 </html>
