@@ -17,6 +17,7 @@
       name="description"
       content="{{ description }}"
     />
+    <meta name="generator" content="{{ eleventy.generator }}">
     <meta property="og:title" content="{{ title if title else site.title }}" />
     <meta
       property="og:description"
@@ -89,7 +90,7 @@
           {% for entry in section.entries %}
           {% if entry.href %}<a href="{{ entry.href }}"
             >{% endif %}<img
-              src="{{ entry.src }}"
+              src="{% if entry.src.startsWith('http') %}{{ 'https://buttonproxy.tauon.dev/fetch' if env.environment.isProd else 'http://localhost:6969/' }}?url={{ entry.src }}&redirect_if_blocked=true{% else %}{{ entry.src }}{% endif %}"
               alt="{{ entry.alt }}"
               width="88"
               height="31"
