@@ -38,20 +38,20 @@ date: git Last Modified
 {% endblock %}
 {% block page %}
 <h1>my gd stats :3</h1>
-<small
-  >these aren't live yet but i'm planning on doing that soon once
-  i move this site to my server</small
->
+<small>
+  these stats are now semi-live! they update every time i rebuild my site :3
+</small>
 <h3>details:</h3>
 <ul>
-  <li>username: tauon07</li>
-  <li>stars: 39</li>
-  <li>diamonds: 561</li>
-  <li>coins: 8</li>
-  <li>creatorpoints: 0</li>
-  <li>demons: 0</li>
+  <li>username: {{ gd.username }}</li>
+  <li>stars: {{ gd.stats.stars }}</li>
+  <li>diamonds: {{ gd.stats.diamonds }}</li>
+  <li>coins: {{ gd.stats.coins.normal }}</li>
+  <li>creatorpoints: {{ gd.stats.cp }}</li>
+  <li>demons: {{ gd.stats.demons }}</li>
 </ul>
 <h3>demons:</h3>
+<small>these don't update quite yet</small>
 <h4>the nightmare:</h4>
 <div class="progress_bar">
   <div style="width: 65%">65%</div>

@@ -4,13 +4,14 @@
   "description": "lily's home page",
   "author": "lily <lily@tauon.dev>",
   "scripts": {
-      "build": "rm -rf www && node prebuild.js && ELEVENTY_ENV=prod eleventy",
-      "serve": "rm -rf www && node prebuild.js && ELEVENTY_ENV=dev eleventy --serve",
-      "update": "git pull && yarn && yarn build"
+    "build": "rm -rf www && node prebuild.js && ELEVENTY_ENV=prod eleventy",
+    "serve": "rm -rf www && node prebuild.js && ELEVENTY_ENV=dev eleventy --serve",
+    "update": "git pull && yarn && yarn build"
   },
   "license": "BSD-3-Clause",
   "private": false,
   "dependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^2.0.1",
+    "gd.js": "^0.2.13"
   }
 }

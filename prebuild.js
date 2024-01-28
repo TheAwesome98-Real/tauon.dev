@@ -42,3 +42,19 @@ for (let set of eightyeightbythirtyones) {
     }
   }
 }
+
+const GD = require("gd.js");
+let gd = new GD();
+(async () => {
+  let userinfo = await gd.users.get('tauon07');
+  userinfo._creator = null;
+  userinfo.cosmetics._creator = null;
+  try {
+    filesystem.unlinkSync("src/_data/gd.json");
+  } catch (err) {
+    if (err.code != "ENOENT") {
+      throw err;
+    }
+  }
+  filesystem.writeFileSync("src/_data/gd.json", JSON.stringify(userinfo));
+})();

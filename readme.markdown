@@ -21,3 +21,7 @@ secret=... ; the secret that was generated before
 user=... ; the user that has access to yarn
 ```
 6. done
+
+finally, you may do dynamic data in the `prebuild.js` file. this currently
+refreshes owned 88x31s, and refreshes geometry dash data. it could,
+perhaps, get build date and commit hash.
