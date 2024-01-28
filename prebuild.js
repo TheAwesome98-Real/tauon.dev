@@ -5,7 +5,13 @@ const eightyeightbythirtyones = JSON.parse(
   filesystem.readFileSync("src/_data/88x31s.json")
 );
 
-filesystem.renameSync("src/static/images/88x31/3rdparty", "3rdparty.bak");
+try {
+  filesystem.renameSync("src/static/images/88x31/3rdparty", "3rdparty.bak");
+} catch (err) {
+  if (err.code != "ENOENT") {
+    throw err;
+  }
+}
 
 filesystem.mkdirSync("src/static/images/88x31/3rdparty/");
 
