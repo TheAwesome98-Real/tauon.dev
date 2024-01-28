@@ -4,8 +4,8 @@
   "description": "lily's home page",
   "author": "lily <lily@tauon.dev>",
   "scripts": {
-      "build": "rm -rf www && ELEVENTY_ENV=prod eleventy",
-      "serve": "rm -rf www && ELEVENTY_ENV=dev eleventy --serve",
+      "build": "rm -rf www && node prebuild.js && ELEVENTY_ENV=prod eleventy",
+      "serve": "rm -rf www && node prebuild.js && ELEVENTY_ENV=dev eleventy --serve",
       "update": "git pull && yarn && yarn build"
   },
   "license": "BSD-3-Clause",

@@ -4,7 +4,7 @@
     "entries": [
       {
         "href": "https://tauon.dev/",
-        "src": "/images/88x31/lily.png",
+        "src": "lily.png",
         "alt": "lily",
         "title": "do hotlink my button!"
       },
@@ -90,41 +90,41 @@
     "entries": [
       {
         "href": "https://cyber.dabamos.de/88x31/",
-        "src": "/images/88x31/88x31.gif",
+        "src": "88x31.gif",
         "alt": "88 by 31"
       },
       {
-        "src": "/images/88x31/fuckadobe.gif",
+        "src": "fuckadobe.gif",
         "alt": "fuck adobe"
       },
       {
         "href": "https://www.accursedfarms.com/",
-        "src": "/images/88x31/accursed-farms-alien-blink.gif",
+        "src": "accursed-farms-alien-blink.gif",
         "alt": "accursed farms"
       },
       {
-        "src": "/images/88x31/anythingbutchrome.gif",
+        "src": "anythingbutchrome.gif",
         "alt": "anything but chrome"
       },
       {
-        "src": "/images/88x31/anythingbutwindows.gif",
+        "src": "anythingbutwindows.gif",
         "alt": "anything but windows"
       },
       {
-        "src": "/images/88x31/fedi.gif",
+        "src": "fedi.gif",
         "alt": "join the fediverse"
       },
       {
-        "src": "/images/88x31/piracy.gif",
+        "src": "piracy.gif",
         "alt": "piracy now",
         "title": "piracy is swag and you should do it"
       },
       {
-        "src": "/images/88x31/anarchynow.gif",
+        "src": "anarchynow.gif",
         "alt": "anarchy now"
       },
       {
-        "src": "/images/88x31/antinft.gif",
+        "src": "antinft.gif",
         "alt": "this is an anti NFT site"
       },
       {
@@ -133,33 +133,33 @@
         "alt": "keep the web free, say no to web3"
       },
       {
-        "src": "/images/88x31/sucks.gif",
+        "src": "sucks.gif",
         "alt": "this website sucks"
       },
       {
-        "src": "/images/88x31/love_blahaj.gif",
+        "src": "love_blahaj.gif",
         "alt": "love BLÅHAJ"
       },
       {
-        "src": "/images/88x31/nofuckingthanks.gif",
+        "src": "nofuckingthanks.gif",
         "alt": "NFTs? no fucking thanks!"
       },
       {
-        "src": "/images/88x31/transrights.png",
+        "src": "transrights.png",
         "alt": "trans rights now!"
       },
       {
-        "src": "/images/88x31/she/it.png",
+        "src": "she/it.png",
         "alt": "my pronouns are she/it"
       },
       {
         "href": "https://graas.easrng.net/user/@tauon@possum.city",
-        "src": "/images/88x31/graas.gif",
+        "src": "graas.gif",
         "alt": "this user touches grass"
       },
       {
         "href": "https://w3schools.com/",
-        "src": "/images/88x31/html.png",
+        "src": "html.png",
         "alt": "learn html today!"
       },
       {
@@ -169,47 +169,47 @@
       },
       {
         "href": "https://cohost.org/",
-        "src": "/images/88x31/cohost.png",
+        "src": "cohost.png",
         "alt": "cohost now"
       },
       {
         "href": "https://www.mozilla.org/firefox/new/",
-        "src": "/images/88x31/firefox.gif",
+        "src": "firefox.gif",
         "alt": "firefox now"
       },
       {
-        "src": "/images/88x31/acab.gif",
+        "src": "acab.gif",
         "alt": "acab"
       },
       {
-        "src": "/images/88x31/autismnow.png",
+        "src": "autismnow.png",
         "alt": "autism now!"
       },
       {
         "href": "https://cohost.org/",
-        "src": "/images/88x31/cohost_new.png",
+        "src": "cohost_new.png",
         "alt": "cohost"
       },
       {
-        "src": "/images/88x31/discord-no-way.gif",
+        "src": "discord-no-way.gif",
         "alt": "discord? no way!"
       },
       {
-        "src": "/images/88x31/xenia.gif",
+        "src": "xenia.gif",
         "alt": "powered by linux with a drawing of xenia the fox"
       },
       {
-        "src": "/images/88x31/tyg.gif",
+        "src": "tyg.gif",
         "alt": "trans your gender"
       },
       {
         "href": "https://freeplay.floof.company/assets/buttons/ublock.png",
-        "src": "/images/88x31/ublock.png",
+        "src": "ublock.png",
         "alt": "ublock origin now"
       },
       {
         "href": "https://freeplay.floof.company/assets/buttons/firefox.png",
-        "src": "/images/88x31/firefox.png",
+        "src": "firefox.png",
         "alt": "take back the web, install firefox"
       }
     ]

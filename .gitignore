@@ -134,3 +134,6 @@ dist
 # eleventy stuff
 _site/
 www/
+
+# thing for buttons
+src/static/images/88x31/3rdparty
