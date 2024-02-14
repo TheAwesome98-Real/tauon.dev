@@ -82,6 +82,16 @@
         "href": "https://freeplay.floof.company/",
         "src": "https://freeplay.floof.company/assets/buttons/free.png",
         "alt": "FREEEE (freeplay)"
+      },
+      {
+        "href": "https://8bitosc.net/",
+        "src": "https://8bitosc.net/88x31/8bitosc.png",
+        "alt": "A blue button with the text \"8BitOSC (dot net)\" on it."
+      },
+      {
+        "href": "https://asahixp.pages.gay/",
+        "src": "https://asahixp.pages.gay/data/images/asahixp.gif",
+        "alt": "Asahi button :D"
       }
     ]
   },
@@ -211,6 +221,15 @@
         "href": "https://freeplay.floof.company/assets/buttons/firefox.png",
         "src": "firefox.png",
         "alt": "take back the web, install firefox"
+      },
+      {
+        "href": "https://pcrf.net/",
+        "src": "palestine.png",
+        "alt": "free palestine"
+      },
+      {
+        "src": "nowar.gif",
+        "alt": "no war in ukraine"
       }
     ]
   }

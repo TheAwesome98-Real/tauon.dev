@@ -1,19 +1,18 @@
 const http = require("http");
 const https = require("https");
 const filesystem = require("fs");
+
 const eightyeightbythirtyones = JSON.parse(
   filesystem.readFileSync("src/_data/88x31s.json")
 );
 
 try {
-  filesystem.renameSync("src/static/images/88x31/3rdparty", "3rdparty.bak");
+  filesystem.mkdirSync("src/static/images/88x31/3rdparty/");
 } catch (err) {
-  if (err.code != "ENOENT") {
+  if (err.code != "EEXIST") {
     throw err;
   }
 }
-
-filesystem.mkdirSync("src/static/images/88x31/3rdparty/");
 
 for (let set of eightyeightbythirtyones) {
   for (let button of set.entries) {
@@ -24,21 +23,32 @@ for (let set of eightyeightbythirtyones) {
       client = http;
     }
     if (client != null) {
-      client.get(button.src, (res) => {
-        let file = filesystem.createWriteStream(
-          "src/static/images/88x31/3rdparty/" +
-            button.src.replaceAll("/", "_").replaceAll(":", "_")
-        );
-        res.pipe(file);
+      let url = new URL(button.src);
+      client
+        .get(
+          { hostname: url.hostname, path: url.pathname + url.search, headers: { "User-Agent": "Mozilla/5.0" } },
+          (res) => {
+            let outfile =
+              "src/static/images/88x31/3rdparty/" +
+              button.src.replaceAll("/", "_").replaceAll(":", "_");
+            try {
+              filesystem.unlinkSync(outfile);
+            } catch (err) {
+              if (err.code != "ENOENT") {
+                throw err;
+              }
+            }
+            let file = filesystem.createWriteStream(outfile);
+            res.pipe(file);
 
-        file.on("finish", () => {
-          file.close();
-        });
-
-        res.on("error", (err) => {
+            file.on("finish", () => {
+              file.close();
+            });
+          }
+        )
+        .on("error", (err) => {
           console.error("failed to download", button.src, ":", err);
         });
-      });
     }
   }
 }
@@ -46,7 +56,7 @@ for (let set of eightyeightbythirtyones) {
 const GD = require("gd.js");
 let gd = new GD();
 (async () => {
-  let userinfo = await gd.users.get('tauon07');
+  let userinfo = await gd.users.get("tauon07");
   userinfo._creator = null;
   userinfo.cosmetics._creator = null;
   try {
