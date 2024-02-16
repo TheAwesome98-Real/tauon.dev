@@ -26,7 +26,15 @@ for (let set of eightyeightbythirtyones) {
       let url = new URL(button.src);
       client
         .get(
-          { hostname: url.hostname, path: url.pathname + url.search, headers: { "User-Agent": "Mozilla/5.0" } },
+          {
+            hostname: url.hostname,
+            path: url.pathname + url.search,
+            headers: {
+              "User-Agent": `tauon.dev-prebuild-fetcher/${
+                require("./package.json").version
+              } node-http/${process.versions.node} <lily@tauon.dev>`,
+            },
+          },
           (res) => {
             let outfile =
               "src/static/images/88x31/3rdparty/" +
@@ -68,3 +76,21 @@ let gd = new GD();
   }
   filesystem.writeFileSync("src/_data/gd.json", JSON.stringify(userinfo));
 })();
+
+const spawn = require("child_process").spawn;
+const proc = spawn("git", ["log", "-n", "1", '--pretty=format:"%h%n%s%n%ad"']);
+
+let output = "";
+proc.stdout.on("data", (chunk) => {
+  output += chunk.toString();
+});
+proc.on("exit", () => {
+  let [hash, message, dateRaw] = output.slice(1, -1).split(/\r\n|\r|\n/g);
+  let data = {
+    hash,
+    message,
+    commitDate: new Date(dateRaw),
+    buildDate: new Date(),
+  };
+  filesystem.writeFileSync("src/_data/buildinfo.json", JSON.stringify(data));
+});
