@@ -178,6 +178,10 @@ a:hover {
   .left ul {
     text-align: left;
   }
+
+  .right {
+    max-width: 75%;
+  }
 }
 
 @media (prefers-color-scheme: light) {
