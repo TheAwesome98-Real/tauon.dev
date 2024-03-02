@@ -53,6 +53,12 @@
         "src": "status.cafe",
         "alt": "status.cafe icon",
         "title": "status.cafe"
+      },
+      {
+        "href": "https://wasteof.money/@lily",
+        "src": "wasetof.money",
+        "alt": "An iOS 6 style wasteof.money icon",
+        "title": "wasteof.money"
       }
     ]
   },
