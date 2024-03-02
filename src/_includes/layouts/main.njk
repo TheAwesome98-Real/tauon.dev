@@ -88,7 +88,7 @@
           {% for section in 88x31s %}
           <p>{{ section.name }}:</p>
           {% for entry in section.entries %}
-          {% if entry.href %}<a href="{{ entry.href }}"
+          {% if entry.href %}<a href="{{ entry.href }}" target="_blank"
             >{% endif %}<img
               src="/images/88x31/{% if entry.src.startsWith('http') %}3rdparty/{{ entry.src.replaceAll('/', '_').replaceAll(':', '_') }}{% else %}{{ entry.src }}{% endif %}"
               alt="{{ entry.alt }}"
