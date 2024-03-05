@@ -180,7 +180,7 @@ a:hover {
   }
 
   .right {
-    max-width: 75%;
+    min-width: 75%;
   }
 }
 
