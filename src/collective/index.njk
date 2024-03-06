@@ -9,6 +9,19 @@ active: collective
   h2 {
     font-size: 1.2em;
   }
+
+  /* we wanted it to be green but i'm lazy rn, so: */
+  html {
+    filter: hue-rotate(180deg);
+  }
+
+  center:first-of-type {
+    filter: hue-rotate(180deg); /* weird rendering bug */
+  }
+
+  a:not(:visited) {
+    color: #ffd7ee;
+  }
 </style>
 {% endblock %}
 {% block page %}
