@@ -1,0 +1,15 @@
+{% extends 'layouts/music.njk' %}
+{% block page %}
+<div style="display:inline-block;">
+  <div class="large album_art">
+    <img width="100%" height="100%" alt="Album art for {{ music[index].fulldisplay }}" src="/images/albumcovers/{{ music[index].id }}.png" />
+  </div>
+</div>
+<div style="display:inline-block; vertical-align: top;">
+  <h1 style="font-size: 1.5em;">{{ music[index].fulldisplay }}</h1>
+  <audio src="/media/{{ music[index].id }}/{{ music[index].fulldisplay }}.mp3" controls="true"></audio><br/><br/>
+  {% for format in ["mp3", "wav", "flac"] %}
+  <a href="/media/{{ music[index].id }}/{{ music[index].fulldisplay }}.{{ format }}" download="true">Download .{{ format }} format audio</a><br/>
+  {% endfor %}
+</div>
+{% endblock %}

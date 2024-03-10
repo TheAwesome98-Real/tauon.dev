@@ -1,5 +1,8 @@
 module.exports = (config) => {
   config.addPassthroughCopy({ "src/static": "/" });
+  config.addFilter("unix2date", (date) => {
+    return new Date(date).toLocaleDateString();
+  });
   return {
     templateFormats: ["njk", "md", "html"],
     dir: {

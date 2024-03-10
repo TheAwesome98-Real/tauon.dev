@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ title }}</title>
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0"
+    />
+    <meta name="theme-color" content="#3fc8ff" />
+    <style>
+        :root {
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+            sans-serif;
+          accent-color: #3fc8ff;
+          color-scheme: dark;
+        }
+
+        ::selection {
+          background: #3fc8ff;
+          color: white;
+        }
+
+        body {
+          margin: 0;
+          background: url(/images/ntoskrnl_bg.png);
+          animation: scroll-bg 5s linear infinite;
+        }
+
+        @keyframes scroll-bg {
+          from {
+            background-position-y: 0;
+          }
+
+          to {
+            /* if you're stealing this (and definitely do, it's the spirit of the web <3) then
+               remember this has to be the size of your background image, but negative */
+            background-position-y: -128px;
+          }
+        }
+
+        .page_content {
+          background: #1c1b22fb;
+          box-shadow: 0 0 16px black;
+          padding: 4px;
+          height: calc(100vh - 64px - 8px);
+          backdrop-filter: blur(4px);
+        }
+
+        .top {
+          height: 64px;
+          display: flex;
+          align-items: center;
+        }
+
+        .logo {
+          margin-left: 4px;
+        }
+
+        a {
+          color: white;
+        }
+
+        a:visited {
+          text-decoration-color: #3fc8ff;
+        }
+
+        nav a {
+          text-decoration: none;
+          background: transparent;
+          border: 1px solid transparent;
+          transition: background 0.25s, border 0.25s;
+          padding: 2px;
+        }
+
+        nav a:hover {
+          background: #fff4;
+          border: 1px solid #fff8;
+        }
+
+        nav a * {
+          vertical-align: middle;
+        }
+
+        .files-notice {
+          text-align: center;
+          margin-top: 16px;
+          opacity: 0.8;
+        }
+
+        .album_art {
+          display: inline-block;
+          width: 64px;
+          height: 64px;
+          overflow: hidden;
+        }
+
+        .large.album_art {
+          width: 256px;
+          height: 256px;
+        }
+
+        td {
+          padding: 0 8px;
+        }
+
+        a svg {
+          transform: scale(75%);
+          --icon-yt-current-accent: white;
+          --icon-yt-current-fill: transparent;
+          --icon-spotify-current-accent: white;
+          --icon-soundcloud-current-accent: white;
+          --icon-flacfile-current-accent: white;
+        }
+
+        a:hover svg {
+          --icon-yt-current-accent: red;
+          --icon-yt-current-fill: white;
+          --icon-spotify-current-accent: #1dda63;
+          --icon-soundcloud-current-accent: #F50;
+          --icon-flacfile-current-accent: #3fc8ff;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="top">
+      <svg class="logo" width="360" height="51">
+        <use href="/images/ntoskrnl_logo.svg#logo"></use>
+      </svg>
+    </div>
+    <div class="page_content">
+      <nav>
+        <a href="/"><img src="/images/computer.png" alt="computer" /> top</a> <a href=".."><img src="/images/up.png" alt="up" /> up</a> <a href="javascript:history.back()"><img src="/images/back.png" alt="back" /> back</a> <a href="javascript:history.forward()"><img src="/images/forward.png" alt="forward" /> forward</a>
+      </nav>
+      <div style="padding: 8px;">
+        {% block page %}
+        {% endblock %}
+      </div>
+    </div>
+  </body>
+</html>

@@ -139,3 +139,6 @@ www/
 src/static/images/88x31/3rdparty
 src/_data/gd.json
 src/_data/buildinfo.json
+
+# don't commit music tracks since you can just get flacs from the actual website obv
+src/static/media

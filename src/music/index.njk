@@ -1,0 +1,55 @@
+---
+title: ntoskrnl
+description: a list of all ntoskrnl tracks
+---
+{% extends 'layouts/music.njk' %}
+{% block page %}
+{% if music.length < 1 %}
+<p class="files-notice">There are no songs.</p>
+{% else %}
+{% for song in music %}
+<table style="margin:8px;">
+  <td>
+    <div class="album_art">
+      <img width="100%" height="100%" alt="Album art for {{ song.fulldisplay }}" src="/images/albumcovers/{{ song.id }}.png" />
+    </div>
+  </td>
+  <td>
+    <a href="{{ song.id }}">{{ song.title }}</a><br/>
+    <span style="opacity:0.65">{{ song.artist }}</span>
+  </td>
+  <td>
+    {{ song.date | unix2date }}
+  </td>
+  <td>
+    <a href="{{ song.id }}">
+      <svg width="50" height="50">
+        <use href="/images/icons/vectors/FLAC.svg#logo"></use>
+      </svg>
+    </a>
+  </td>
+  <td>
+    {% if song.youtube %}<a href="https://youtu.be/{{ song.youtube }}">
+      <svg width="50" height="50">
+        <use href="/images/icons/vectors/YouTube.svg#logo"></use>
+      </svg>
+    </a>{% endif %}
+  </td>
+  <td>
+    {% if song.spotify %}<a href="https://open.spotify.com/track/{{ song.spotify }}">
+      <svg width="50" height="50">
+        <use href="/images/icons/vectors/Spotify.svg#logo"></use>
+      </svg>
+    </a>{% endif %}
+  </td>
+  <td>
+    {% if song.soundcloud %}<a href="https://soundcloud.com/{{ song.soundcloud }}">
+      <svg width="50" height="22">
+        <use href="/images/icons/vectors/SoundCloud.svg#logo"></use>
+      </svg>
+    </a>{% endif %}
+  </td>
+</table>
+{% endfor %}
+{% endif %}
+{% endblock %}
