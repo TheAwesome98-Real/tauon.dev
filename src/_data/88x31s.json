@@ -250,6 +250,16 @@
         "href": "https://www.mozilla.org/firefox/new/",
         "src": "firefox_cooler.png",
         "alt": "take back the web, install firefox"
+      },
+      {
+        "href": "https://en.m.wikipedia.org/wiki/Cyberdog",
+        "src": "Cyberdog.gif",
+        "alt": "Apple Cyberdog"
+      },
+      {
+        "href": "https://theintraclinic.com/",
+        "src": "https://theintraclinic.com/buttons/btn1.gif",
+        "alt": "The Intra Clinic"
       }
     ]
   }
