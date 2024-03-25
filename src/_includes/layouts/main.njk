@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="/css/radi8's webring.css" />
     {% block head %}{% endblock %}
   </head>
-  <body>
+  <body{% if not env.environment.isProd %} class="__devel__"{% endif %}>
     <div class="content">
       <div class="main">
         <div class="top_container">
@@ -92,11 +92,11 @@
           {% if entry.href %}<a href="{{ entry.href }}" target="_blank"
             >{% endif %}<img
               src="/images/88x31/{% if entry.src.startsWith('http') %}3rdparty/{{ entry.src.replaceAll('/', '_').replaceAll(':', '_') }}{% else %}{{ entry.src }}{% endif %}"
-              alt="{{ entry.alt }}"
+              {% if entry.alt %}alt="{{ entry.alt }}"{% endif %}
               width="88"
               height="31"
               style="image-rendering: pixelated"
-              {% if entry.href %}title="{{ entry.title }}"{% endif %}
+              {% if entry.title %}title="{{ entry.title }}"{% endif %}
             />
           {% if entry.href %}</a>{% endif %}
           {% endfor %}

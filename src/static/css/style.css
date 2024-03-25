@@ -254,3 +254,7 @@ a:hover {
     display: block;
   }
 }
+
+.__devel__ img:not([alt]) {
+  border: 3px dashed red;
+}

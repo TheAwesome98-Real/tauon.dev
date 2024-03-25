@@ -120,8 +120,99 @@
       },
       {
         "href": "https://illudens.neocities.org/",
-        "src": "illudens.gif",
-        "alt": "Illudens has connected to Local Play! [Wiki Addict] Illudens said: the fucker"
+        "src": "https://illudens.neocities.org/illudens.gif",
+        "alt": "Illudens"
+      },
+      {
+        "href": "https://gnawmon.vern.cc/",
+        "src": "https://gnawmon.vern.cc/assets/88x31/gnawmon.png",
+        "alt": "gnawmon"
+      },
+      {
+        "href": "https://liminalityyy.github.io/",
+        "src": "https://liminalityyy.github.io/images/card/liminal.png",
+        "alt": "liminal"
+      },
+      {
+        "__comment": "i don't know the real src url",
+        "href": "https://dottych.github.io/",
+        "src": "https://gnawmon.vern.cc/assets/88x31/dottych.png",
+        "alt": "dottych"
+      },
+      {
+        "href": "https://andrewidot.neocities.org/",
+        "src": "https://andrewidot.neocities.org/assets/88x31/andrewidot_88x31.gif",
+        "alt": "AndrewIdot"
+      },
+      {
+        "href": "https://latetheidiot.neocities.org/",
+        "src": "https://latetheidiot.neocities.org/images/88x31/late88x31.png",
+        "alt": "late cool site",
+        "title": "late cool site"
+      },
+      {
+        "href": "https://liskic.github.io/",
+        "src": "amber.png",
+        "title": "amber (my cute gf)",
+        "alt": "haiiii!!! :3 haii ^w^ hiiii haii hii!! :3"
+      }
+    ]
+  },
+  {
+    "name": "cool shows n stuff",
+    "entries": [
+      {
+        "href": "https://www.youtube.com/@DiminishGame",
+        "src": "diminish.png",
+        "alt": "diminish",
+        "title": "diminish"
+      },
+      {
+        "href": "https://www.youtube.com/@Petscop",
+        "src": "petscop.png",
+        "alt": "petscop"
+      },
+      {
+        "src": "toh.png",
+        "alt": "the owl house"
+      },
+      {
+        "__comment": "i don't know the real src url",
+        "href": "https://www.youtube.com/@minewatch/about",
+        "src": "https://gnawmon.vern.cc/assets/88x31/minexplorer.png",
+        "alt": "MineXplorer"
+      },
+      {
+        "__comment": "i don't know the real src url",
+        "href": "https://www.youtube.com/@minewatch/about",
+        "src": "https://gnawmon.vern.cc/assets/88x31/minewatch.png",
+        "alt": "MineWatch"
+      },
+      {
+        "__comment": "i don't know the real src url",
+        "href": "https://www.youtube.com/@unintelligible-synapse",
+        "src": "https://gnawmon.vern.cc/assets/88x31/tbotvact1.png",
+        "alt": "The Bottom of The Void: Act 1"
+      },
+      {
+        "href": "https://www.youtube.com/@MinecraftAlphaVersions",
+        "src": "alphaver.png",
+        "alt": "Minecraft Alpha 1.0.16 Versions"
+      },
+      {
+        "href": "https://www.youtube.com/@nostomaniamc",
+        "src": "nostomania.png",
+        "alt": "nostomania"
+      },
+      {
+        "href": "https://www.youtube.com/@MichealP",
+        "src": "michealp.png",
+        "alt": "micheal p"
+      },
+      {
+        "href": "https://www.youtube.com/@classicminecraft",
+        "src": "cm.png",
+        "alt": "classic minecraft"
       }
     ]
   },
@@ -193,6 +284,7 @@
         "alt": "this user touches grass"
       },
       {
+        "__comment": "probably should make a guide on this on my own site",
         "href": "https://w3schools.com/",
         "src": "html.png",
         "alt": "learn html today!"
@@ -287,6 +379,17 @@
       {
         "src": "pan.png",
         "alt": "pansexual flag, i love everyone"
+      },
+      {
+        "__comment": "i don't know the real src url",
+        "href": "https://balls-online-plus.onrender.com/",
+        "src": "https://gnawmon.vern.cc/assets/88x31/bop.gif",
+        "alt": "balls online: become a ball, talk, draw, play now"
+      },
+      {
+        "__comment": "i don't know the real src url",
+        "src": "https://gnawmon.vern.cc/assets/88x31/mwd.png",
+        "alt": "minecraft webseries discord"
       }
     ]
   }
