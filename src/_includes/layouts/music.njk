@@ -127,6 +127,26 @@
           --icon-bandcamp-current-accent: #1DA0C3;
           --icon-flacfile-current-accent: #3fc8ff;
         }
+
+        .tag {
+          background: linear-gradient(#c3eeff, #3fc8ff 50%, #36b8ed 50%, #2a80a2);
+          color: #fff;
+          padding: 4px 16px;
+          border-radius: 999px;
+          border: 2px solid white;
+          box-shadow: 0 -3px 4px inset #0004;
+          transition: filter 0.25s;
+          cursor: pointer;
+        }
+
+        .tag:hover {
+          filter: brightness(50%);
+        }
+
+        .tag::selection {
+          background: #0004;
+          color: white;
+        }
     </style>
   </head>
   <body>

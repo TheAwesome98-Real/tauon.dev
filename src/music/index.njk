@@ -55,6 +55,10 @@ description: a list of all ntoskrnl tracks
         <use href="/images/icons/vectors/bandcamp.svg#logo"></use>
       </svg>
     </a>{% endif %}
+  </td>
+  <td>
+    {% for tag in song.tags %}<span class="tag">#{{ tag }}</span> {% endfor %}
+  </td>
 </table>
 {% endfor %}
 {% endif %}
