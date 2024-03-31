@@ -1,0 +1,26 @@
+---
+permalink: music/rss.xml
+---
+<?xml version="1.0" encoding="utf-8"?>
+<!-- TODO: <?xml-stylesheet href="/music/rss.xsl" type="text/xsl"?> -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>{{ musicfeed.title }}</title>
+        <link>{{ musicfeed.link }}</link>
+        <description>{{ musicfeed.description }}</description>
+        <atom:link href="{{ musicfeed.link }}rss.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="{{ musicfeed.link }}" rel="alternate" type="text/html" />
+        {% for song in music %}
+        <item>
+            <title>{{ song.fulldisplay }}</title>
+            <link>{{ musicfeed.link }}{{ song.id }}</link>
+            <description>{{ song.fulldisplay }}</description>
+            {% for format in ["mp3", "wav", "flac"] %}
+            <enclosure url="https://tauon.dev/media/{{ music[index].id }}/{{ music[index].fulldisplay }}.{{ format }}" type="audio/{{ format }}" />
+            {% endfor %}
+            <guid isPermaLink="true">{{ musicfeed.link }}{{ song.id }}</guid>
+            <pubDate>{{ song.date | unix2rfc822 }}</pubDate>
+        </item>
+        {% endfor %}
+    </channel>
+</rss>

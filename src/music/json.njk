@@ -1,0 +1,21 @@
+---
+permalink: music/feed.json
+---
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "{{ musicfeed.title }}",
+  "home_page_url": "{{ musicfeed.link }}",
+  "feed_url": "{{ musicfeed.link }}feed.json",
+  "description": "{{ musicfeed.description }}",
+  "items": [
+    {% for song in music %}
+    {
+      "id": "{{ musicfeed.link }}{{ song.id }}",
+      "url": "{{ musicfeed.link }}{{ song.id }}",
+      "title": "{{ song.fulldisplay }}",
+      "content_text": "{{ song.fulldisplay }}",
+      "date_published": "{{ song.date | unix2iso }}"
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ]
+}

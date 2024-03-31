@@ -1,0 +1,28 @@
+---
+permalink: music/atom.xml
+---
+<?xml version="1.0" encoding="utf-8"?>
+<!-- TODO: <?xml-stylesheet href="/music/atom.xsl" type="text/xsl"?> -->
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>{{ musicfeed.link }}</id>
+    <title>{{ musicfeed.title }}</title>
+    <updated>{{ (music | getLast).date | unwrapOrDateNow | unix2iso }}</updated>
+    <author>
+        <name>ntoskrnl</name>
+    </author>
+    <link href="{{ musicfeed.link }}atom.xml" rel="self" type="application/atom+xml" />
+    <link href="{{ musicfeed.link }}" rel="alternate" type="text/html" />
+    <subtitle>{{ musicfeed.description }}</subtitle>
+    {% for song in music %}
+    <entry>
+        <id>{{ musicfeed.link }}{{ song.id }}</id>
+        <title>{{ song.fulldisplay }}</title>
+        <link href="{{ musicfeed.link }}{{ song.id }}" />
+        <updated>{{ song.date | unix2iso }}</updated>
+        <summary type="text/plain">{{ song.fulldisplay }}</summary>
+        {% for format in ["mp3", "wav", "flac"] %}
+        <link rel="enclosure" href="https://tauon.dev/media/{{ music[index].id }}/{{ music[index].fulldisplay }}.{{ format }}" type="audio/{{ format }}" title="{{ format }} format audio" />
+        {% endfor %}
+    </entry>
+    {% endfor %}
+</feed>
