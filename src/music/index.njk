@@ -43,12 +43,18 @@ description: a list of all ntoskrnl tracks
     </a>{% endif %}
   </td>
   <td>
-    {% if song.soundcloud %}<a href="https://soundcloud.com/{{ song.soundcloud }}">
+    {% if song.soundcloud %}<a href="https://soundcloud.com/ntoskrnl_/{{ song.soundcloud }}">
       <svg width="50" height="22">
         <use href="/images/icons/vectors/SoundCloud.svg#logo"></use>
       </svg>
     </a>{% endif %}
   </td>
+  <td>
+    {% if song.bandcamp %}<a href="https://ntoskrnl.bandcamp.com/track/{{ song.bandcamp }}">
+      <svg width="50" height="22">
+        <use href="/images/icons/vectors/bandcamp.svg#logo"></use>
+      </svg>
+    </a>{% endif %}
 </table>
 {% endfor %}
 {% endif %}
