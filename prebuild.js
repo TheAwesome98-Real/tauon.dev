@@ -16,6 +16,10 @@ try {
 
 for (let set of eightyeightbythirtyones) {
   for (let button of set.entries) {
+    if (button.skip) {
+      console.log("skipping", button.src, "because:", button.skip);
+      continue;
+    }
     let client = null;
     if (button.src.startsWith("https")) {
       client = https;

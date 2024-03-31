@@ -126,7 +126,8 @@
       {
         "href": "https://gnawmon.vern.cc/",
         "src": "https://gnawmon.vern.cc/assets/88x31/gnawmon.png",
-        "alt": "gnawmon"
+        "alt": "gnawmon",
+        "skip": "vern.cc down, inflates build times making them big and round"
       },
       {
         "href": "https://liminalityyy.github.io/",
@@ -137,7 +138,8 @@
         "__comment": "i don't know the real src url",
         "href": "https://dottych.github.io/",
         "src": "https://gnawmon.vern.cc/assets/88x31/dottych.png",
-        "alt": "dottych"
+        "alt": "dottych",
+        "skip": "vern.cc down, inflates build times making them big and round"
       },
       {
         "href": "https://andrewidot.neocities.org/",
@@ -180,19 +182,22 @@
         "__comment": "i don't know the real src url",
         "href": "https://www.youtube.com/@minewatch/about",
         "src": "https://gnawmon.vern.cc/assets/88x31/minexplorer.png",
-        "alt": "MineXplorer"
+        "alt": "MineXplorer",
+        "skip": "vern.cc down, inflates build times making them big and round"
       },
       {
         "__comment": "i don't know the real src url",
         "href": "https://www.youtube.com/@minewatch/about",
         "src": "https://gnawmon.vern.cc/assets/88x31/minewatch.png",
-        "alt": "MineWatch"
+        "alt": "MineWatch",
+        "skip": "vern.cc down, inflates build times making them big and round"
       },
       {
         "__comment": "i don't know the real src url",
         "href": "https://www.youtube.com/@unintelligible-synapse",
         "src": "https://gnawmon.vern.cc/assets/88x31/tbotvact1.png",
-        "alt": "The Bottom of The Void: Act 1"
+        "alt": "The Bottom of The Void: Act 1",
+        "skip": "vern.cc down, inflates build times making them big and round"
       },
       {
         "href": "https://www.youtube.com/@MinecraftAlphaVersions",
@@ -384,12 +389,14 @@
         "__comment": "i don't know the real src url",
         "href": "https://balls-online-plus.onrender.com/",
         "src": "https://gnawmon.vern.cc/assets/88x31/bop.gif",
-        "alt": "balls online: become a ball, talk, draw, play now"
+        "alt": "balls online: become a ball, talk, draw, play now",
+        "skip": "vern.cc down, inflates build times making them big and round"
       },
       {
         "__comment": "i don't know the real src url",
         "src": "https://gnawmon.vern.cc/assets/88x31/mwd.png",
-        "alt": "minecraft webseries discord"
+        "alt": "minecraft webseries discord",
+        "skip": "vern.cc down, inflates build times making them big and round"
       }
     ]
   }
