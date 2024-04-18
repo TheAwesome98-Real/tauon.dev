@@ -3,13 +3,17 @@
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
   color-scheme: dark light;
+  color: white;
 }
 
-@media (prefers-color-scheme: dark) {
+/*
+ * maybe unneded?
+ */
+/*@media (prefers-color-scheme: dark) {
   :root {
     color-scheme: dark;
   }
-}
+}*/
 
 body {
   margin: 0;
@@ -99,6 +103,9 @@ blockquote.warning::before {
 
 abbr[title] {
   cursor: help;
+  /* make it look normal on netsurf */
+  font-variant: normal;
+  text-decoration: dotted underline;
 }
 
 a {
@@ -187,6 +194,7 @@ a:hover {
 @media (prefers-color-scheme: light) {
   :root {
     color-scheme: light;
+    color: unset;
   }
 
   body {
