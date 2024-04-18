@@ -126,8 +126,7 @@
       {
         "href": "https://gnawmon.vern.cc/",
         "src": "https://gnawmon.vern.cc/assets/88x31/gnawmon.png",
-        "alt": "gnawmon",
-        "skip": "vern.cc down, inflates build times making them big and round"
+        "alt": "gnawmon"
       },
       {
         "href": "https://liminalityyy.github.io/",
@@ -138,8 +137,7 @@
         "__comment": "i don't know the real src url",
         "href": "https://dottych.github.io/",
         "src": "https://gnawmon.vern.cc/assets/88x31/dottych.png",
-        "alt": "dottych",
-        "skip": "vern.cc down, inflates build times making them big and round"
+        "alt": "dottych"
       },
       {
         "href": "https://andrewidot.neocities.org/",
@@ -155,8 +153,19 @@
       {
         "href": "https://liskic.github.io/",
         "src": "amber.png",
-        "title": "amber (my cute gf)",
-        "alt": "haiiii!!! :3 haii ^w^ hiiii haii hii!! :3"
+        "alt": "haiiii!!! :3 haii ^w^ hiiii haii hii!! :3",
+        "title": "amber (my cute gf)"
+      },
+      {
+        "__comment": "this is mef, in case you forget",
+        "href": "https://7vector.neocities.org/",
+        "src": "https://7vector.neocities.org/7vector88x31.gif",
+        "alt": "7vector"
+      },
+      {
+        "href": "https://authenyo.xyz/",
+        "src": "https://authenyo.xyz/images/button.gif",
+        "alt": "authenyo"
       }
     ]
   },
@@ -182,22 +191,19 @@
         "__comment": "i don't know the real src url",
         "href": "https://www.youtube.com/@minewatch/about",
         "src": "https://gnawmon.vern.cc/assets/88x31/minexplorer.png",
-        "alt": "MineXplorer",
-        "skip": "vern.cc down, inflates build times making them big and round"
+        "alt": "MineXplorer"
       },
       {
         "__comment": "i don't know the real src url",
         "href": "https://www.youtube.com/@minewatch/about",
         "src": "https://gnawmon.vern.cc/assets/88x31/minewatch.png",
-        "alt": "MineWatch",
-        "skip": "vern.cc down, inflates build times making them big and round"
+        "alt": "MineWatch"
       },
       {
         "__comment": "i don't know the real src url",
         "href": "https://www.youtube.com/@unintelligible-synapse",
         "src": "https://gnawmon.vern.cc/assets/88x31/tbotvact1.png",
-        "alt": "The Bottom of The Void: Act 1",
-        "skip": "vern.cc down, inflates build times making them big and round"
+        "alt": "The Bottom of The Void: Act 1"
       },
       {
         "href": "https://www.youtube.com/@MinecraftAlphaVersions",
@@ -389,14 +395,12 @@
         "__comment": "i don't know the real src url",
         "href": "https://balls-online-plus.onrender.com/",
         "src": "https://gnawmon.vern.cc/assets/88x31/bop.gif",
-        "alt": "balls online: become a ball, talk, draw, play now",
-        "skip": "vern.cc down, inflates build times making them big and round"
+        "alt": "balls online: become a ball, talk, draw, play now"
       },
       {
         "__comment": "i don't know the real src url",
         "src": "https://gnawmon.vern.cc/assets/88x31/mwd.png",
-        "alt": "minecraft webseries discord",
-        "skip": "vern.cc down, inflates build times making them big and round"
+        "alt": "minecraft webseries discord"
       }
     ]
   }
