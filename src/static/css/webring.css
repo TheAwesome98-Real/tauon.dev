@@ -1,6 +1,6 @@
 /* the following code is stolen from maia and probably written by charlotte */
 
-.radi8-webring-container {
+.webring-container {
   all: unset;
   flex-direction: column;
   padding: 1em;
@@ -8,21 +8,21 @@
   display: flex;
 }
 
-.radi8-webring-description {
+.webring-description {
   margin-bottom: 0.5em;
 }
 
-.radi8-webring-site-links {
+.webring-site-links {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   margin: 0;
   padding: 0;
   list-style: none;
   display: grid;
 }
-.radi8-webring-prev-site a:before {
+.webring-prev-site a:before {
   content: "←";
 }
-.radi8-webring-prev-site
+.webring-prev-site
   a:not(:lang(ae)):not(:lang(ar)):not(:lang(arc)):not(:lang(bcc)):not(
     :lang(bqi)
   ):not(:lang(ckb)):not(:lang(dv)):not(:lang(fa)):not(:lang(glk)):not(
@@ -32,7 +32,7 @@
   ):not(:lang(sd)):not(:lang(ug)):not(:lang(ur)):not(:lang(yi)):before {
   margin-right: 1ch;
 }
-.radi8-webring-prev-site
+.webring-prev-site
   a:-webkit-any(
     :lang(ae),
     :lang(ar),
@@ -56,7 +56,7 @@
   ):before {
   margin-left: 1ch;
 }
-.radi8-webring-prev-site
+.webring-prev-site
   a:is(
     :lang(ae),
     :lang(ar),
@@ -80,10 +80,10 @@
   ):before {
   margin-left: 1ch;
 }
-.radi8-webring-next-site a:after {
+.webring-next-site a:after {
   content: "→";
 }
-.radi8-webring-next-site
+.webring-next-site
   a:not(:lang(ae)):not(:lang(ar)):not(:lang(arc)):not(:lang(bcc)):not(
     :lang(bqi)
   ):not(:lang(ckb)):not(:lang(dv)):not(:lang(fa)):not(:lang(glk)):not(
@@ -93,7 +93,7 @@
   ):not(:lang(sd)):not(:lang(ug)):not(:lang(ur)):not(:lang(yi)):after {
   margin-left: 1ch;
 }
-.radi8-webring-next-site
+.webring-next-site
   a:-webkit-any(
     :lang(ae),
     :lang(ar),
@@ -117,7 +117,7 @@
   ):after {
   margin-right: 1ch;
 }
-.radi8-webring-next-site
+.webring-next-site
   a:is(
     :lang(ae),
     :lang(ar),

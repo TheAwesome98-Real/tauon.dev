@@ -40,6 +40,7 @@ for (let set of eightyeightbythirtyones) {
             },
           },
           (res) => {
+            // TODO: if content type doesn't contain "image" then skip and print reason (to remind me)
             let outfile =
               "src/static/images/88x31/3rdparty/" +
               button.src.replaceAll("/", "_").replaceAll(":", "_");
