@@ -1,3 +1,5 @@
+# the github version is no longer being updated! please view the current, update source code [here](https://git.gay/tauon/tauon.dev)
+---
 # [tauon.dev](https://tauon.dev)
 
 meow :3
